@@ -11,6 +11,10 @@ i18n.translations.es = {
   continue: 'Continuar',
   name: 'Nombre',
   already_has_account: '¿Ya tienes una cuenta?',
+  configuration: 'Configuración',
+  activate_alerts: 'Activar alertas',
+  mexico_city: 'Ciudad de Mexico (México)',
+  santiago: 'Santiago (Chile)',
 };
 
 i18n.translations.en = {
@@ -21,6 +25,10 @@ i18n.translations.en = {
   continue: 'Continue',
   name: 'Name',
   already_has_account: 'Already has account?',
+  configuration: 'Configuration',
+  activate_alerts: 'Turn on alerts',
+  mexico_city: 'Mexico City (Mexico)',
+  santiago: 'Santiago (Chile)',
 };
 
 const rnLanguage = RNLocalize.findBestAvailableLanguage(availableLanguage);

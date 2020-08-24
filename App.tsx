@@ -17,6 +17,7 @@ import SingUpScreen from './app/screens/SingUpScreen';
 import RecoverPasswordScreen from './app/screens/RecoverPasswordScreen';
 import {TranslationContext} from './app/context/TranslationContext';
 import i18n from 'i18n-js';
+import TabNavigator from './app/routes/TabNavigator';
 
 const Stack = createStackNavigator();
 
@@ -42,6 +43,11 @@ const App = () => {
             name="RecoverPassword"
             component={RecoverPasswordScreen}
             options={{headerTitle: ''}}
+          />
+          <Stack.Screen
+            name="Home"
+            component={TabNavigator}
+            options={{headerShown: false}}
           />
         </Stack.Navigator>
       </TranslationContext.Provider>

@@ -1,12 +1,5 @@
 import React, {useContext} from 'react';
-import useTranslation from '../hooks/useTranslation';
-import {
-  Text,
-  KeyboardAvoidingView,
-  TextInput,
-  StyleSheet,
-  View,
-} from 'react-native';
+import {KeyboardAvoidingView, StyleSheet, View} from 'react-native';
 import {Input} from 'react-native-elements';
 import {Button, Icon} from 'react-native-elements';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -41,6 +34,7 @@ const LoginScreen = ({navigation}: Props) => {
             titleStyle={style.btnTitleStyle}
             buttonStyle={style.btnStyle}
             containerStyle={style.btnContainerStyle}
+            onPress={() => navigation.navigate('Home')}
           />
         </UpperView>
         <BottomView>
